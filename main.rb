@@ -18,6 +18,9 @@ while game.player_1.life_points > 0 && game.player_2.life_points > 0
       puts "#{player.player_name}: Yes! You are correct."
     end
 
+    if player.life_points == 0
+      break
+    end
     print game.info
     puts "----- NEW TURN -----"
   end
@@ -29,5 +32,7 @@ if game.player_1.life_points == 0
 else
   puts "Player 1 wins with a score of #{game.player_1.life_points}/3"
 end
+puts "----- GAME OVER -----"
+puts "Good bye!"
 
 

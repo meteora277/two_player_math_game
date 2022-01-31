@@ -9,7 +9,7 @@ class Turn
   def initialize
     x = random_number
     y = random_number
-    @answer = x + y
+    @answer = (x + y).to_s
     @question = "what does #{x} + #{y} equal?"
   end
 
